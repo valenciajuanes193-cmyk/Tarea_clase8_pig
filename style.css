@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.contenedor {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+
+nav {
+  background-color: gray;
+  padding: 10px;
+}
+
+.menu-icono {
+  display: none;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+
+.fila {
+  display: flex;
+}
+
+section {
+  width: 70%;
+  background-color: wheat;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+section article {
+  width: 50%;
+  padding: 15px;
+}
+
+aside {
+  width: 30%;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+@media (max-width: 1000px) {
+  section {
+    width: 60%;
+    background-color: paleturquoise;
+  }
+  aside {
+    width: 40%;
+    background-color: pink;
+  }
+}
+
+
+@media (max-width: 800px) {
+  section {
+    width: 50%;
+  }
+  section article {
+    width: 100%;
+  }
+  aside {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 680px) {
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .fila {
+    flex-direction: column;
+  }
+  section, aside {
+    width: 100%;
+  }
+  .enlaces {
+    display: none;
+  }
+  .menu-icono {
+    display: block;
+    text-align: center;
+  }
+}
